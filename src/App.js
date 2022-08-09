@@ -10,13 +10,25 @@ const App = observer(() => {
 
   return (
     <>
-      <Box w="100%" p={4} bg="teal.600" color="#fff">
+      <Box
+        w="100%"
+        p={4}
+        bg="teal.600"
+        color="#fff"
+      >
         <Heading size="md">FakeStore React+Mobx</Heading>
       </Box>
       {products.products.map((item) => {
         return (
-          <div key={item.id} style={{ width: "200px" }}>
-            <img src={item.image} alt={item.title} style={{ width: "150px" }} />
+          <div
+            key={item.id}
+            style={{ width: "200px" }}
+          >
+            <img
+              src={item.image}
+              alt={item.title}
+              style={{ width: "150px" }}
+            />
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </div>
